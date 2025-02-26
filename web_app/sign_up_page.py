@@ -6,25 +6,28 @@ def center_text(text: str, heading_type: int = 1) -> DeltaGenerator:   #here, we
                                                                  ## i.e. heading_type=3
     return st.markdown(f"<h{heading_type} style='text-align: center;' >{text}</h{heading_type}>", unsafe_allow_html=True)
 
-
 # Title
 center_text('Sign up page')
 
 # Sign up form
 
-# Username
-username = st.text_input(label="", placeholder="username")
+column_one, column_two = st.columns(spec=2, gap="medium")
 
-# Password
-password = st.text_input (label = "", placeholder = "password", type = "password") 
+with column_one:
+    # Username
+    username = st.text_input(label="", placeholder="username")
 
-# Email
-email = st.text_input (label = "", placeholder = "email")
+    # Password
+    password = st.text_input (label = "", placeholder = "password", type = "password") 
 
-# How about adding option to upload and preview images
+with column_two:
+    # Email
+    email = st.text_input (label = "", placeholder = "email")
 
-# File Uploaded Widget
-profile_photo = st.file_uploader(label = "Upload a profile photo", type = ['png', 'jpg', 'jpeg'] )
+    # How about adding option to upload and preview images
+
+    # File Uploaded Widget
+    profile_photo = st.file_uploader(label = "Upload a profile photo", type = ['png', 'jpg', 'jpeg'] )
 
 # Adding Preview button
 
