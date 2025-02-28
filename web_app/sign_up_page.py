@@ -1,16 +1,13 @@
 import streamlit as st
-
 from streamlit.delta_generator import DeltaGenerator
 
-def center_text(text: str, heading_type: int = 1) -> DeltaGenerator:   #here, we changed center text to have default parameters
-                                                                 ## i.e. heading_type=3
-    return st.markdown(f"<h{heading_type} style='text-align: center;' >{text}</h{heading_type}>", unsafe_allow_html=True)
+# Custom Module
+from streamlit_util import center_text
 
 # Title
 center_text('Sign up page')
 
 # Sign up form
-
 column_one, column_two = st.columns(spec=2, gap="medium")
 
 with column_one:
@@ -30,7 +27,6 @@ with column_two:
     profile_photo = st.file_uploader(label = "Upload a profile photo", type = ['png', 'jpg', 'jpeg'] )
 
 # Adding Preview button
-
 if st.button(label= "submit "):
     
     # setup previews
