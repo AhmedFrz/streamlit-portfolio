@@ -5,7 +5,7 @@ from streamlit import markdown, pyplot     # this is code from sign_up_page.py f
 from streamlit.delta_generator import DeltaGenerator
 
 # Centering Functionality
-def cetner_text(text:str, heading_type:int =1) -> DeltaGenerator:
+def center_text(text:str, heading_type:int =1) -> DeltaGenerator:
     return markdown(f"<h{heading_type} style='text-align:center;'>{text} <h{heading_type}>", unsafe_allow_html=True)
 
 """

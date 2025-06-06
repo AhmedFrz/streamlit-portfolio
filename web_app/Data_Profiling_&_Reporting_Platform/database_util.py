@@ -17,13 +17,18 @@ def load_db_variables(file_path:str) -> None:
         # Update the enviro dictionary
         environ.update(db_vars)
 
-# Creating SQLAlchemy engine
-def create_postgres_engine() -> Engine:
-    username = environ.get ('POSTGRES_USER')
-    password = environ.get ('POSTGRES_PASSWORD')
-    host = environ.get ('POSTGRES_HOST')
-    port = environ.get ('POSTGRES_PORT')
-    database = environ.get ('POSTGRES_DATABASE')
+        # Clear the db_vars
+        db_vars.clear()
 
-    engine: Engine = create_engine(f'postgresql://{username}:{password}@{host}/{database}')
+# Creating SQLAlchemy engine
+
+def create_postgres_engine(username: str, password: str, host: str, port: str, database: str) -> Engine:
+    engine: Engine = create_engine(f'postgresql://{username}:{password}@{host}:{port}/{database}')
     return engine
+
+# Create the connection
+def create_postgres_connection(engine: Engine) -> Connection:
+    # Create the connection
+    connection: Connection = engine.connect()
+
+    return connection
