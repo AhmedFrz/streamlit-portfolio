@@ -7,16 +7,6 @@ A professional, user-friendly web application for data profiling, reporting, and
 
 ---
 
-![App Screenshot](web_app/Data_Profiling_&_Reporting_Platform/assets/main%20page.png)
-
-![App Screenshot](web_app/Data_Profiling_&_Reporting_Platform/assets/adding%20file_screenshot.png)
-
-![App Screenshot](web_app/Data_Profiling_&_Reporting_Platform/assets/csv_added_to_database.png)
-
-![App Screenshot](web_app/Data_Profiling_&_Reporting_Platform/assets/query_result.png)
-
----
-
 ## Table of Contents
 - [Features](#features)
 - [Getting Started](#getting-started)
@@ -116,3 +106,19 @@ See their respective folders for details.
 
 - **Email:** ahd.farz@gmail.com
 - **LinkedIn:** [Ahmed Faraz](https://www.linkedin.com/in/ahd-faraz/)
+
+
+
+---
+
+
+![App Screenshot](web_app/Data_Profiling_&_Reporting_Platform/assets/main%20page.png)
+
+![App Screenshot](web_app/Data_Profiling_&_Reporting_Platform/assets/adding%20file_screenshot.png)
+
+![App Screenshot](web_app/Data_Profiling_&_Reporting_Platform/assets/csv_added_to_database.png)
+
+![App Screenshot](web_app/Data_Profiling_&_Reporting_Platform/assets/query_result.png)
+
+
+---
