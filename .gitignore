@@ -2,5 +2,8 @@ repo/repo/streamlit_apps/web_app/__pycache__
 
 af-graphing-calculator.py
 
-
 web_app/Data_Profiling_&_Reporting_Platform/__pycache__
+
+web_app/Data_Profiling_&_Reporting_Platform/postgres_creds.json
+
+
